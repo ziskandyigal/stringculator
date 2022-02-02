@@ -1,3 +1,4 @@
+//go:generate mockgen -destination ../mocks/mock_calculator.go --package mocks -source calculator.go
 package calculator
 
 type Calculator interface {

@@ -12,22 +12,22 @@ import (
 
 type Allmighty struct{}
 
-func (a *Allmighty) Add(num1, num2 int) (string, error) {
+func (a *Allmighty) AddXY(num1, num2 int) (string, error) {
 	res := num1 + num2
 	return a.hashify(fmt.Sprint(res))
 }
 
-func (a *Allmighty) Sub(num1, num2 int) (string, error) {
+func (a *Allmighty) SubXY(num1, num2 int) (string, error) {
 	res := num1 - num2
 	return a.hashify(fmt.Sprint(res))
 }
 
-func (a *Allmighty) Sum(num1, num2 int) (string, error) {
+func (a *Allmighty) SumXY(num1, num2 int) (string, error) {
 	res := num1 + num2
 	return a.hashify(fmt.Sprint(res))
 }
 
-func (a *Allmighty) Div(num1, num2 int) (string, error) {
+func (a *Allmighty) DivXY(num1, num2 int) (string, error) {
 	if num1 == 0 {
 		return "", errors.New("invalid operation")
 	}

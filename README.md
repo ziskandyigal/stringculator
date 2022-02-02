@@ -9,6 +9,14 @@
 - [] generate mocks
 - [] write tests
 
+
+## Generate mocks
+```bash
+mockgen -destination=$(pwd)/mocks/mock_presenter.go --package=mocks -source=$(pwd)/presenter/presenter.go
+mockgen -destination=$(pwd)/mocks/mock_converter.go --package=mocks -source=$(pwd)/converter/converter.go
+mockgen -destination=$(pwd)/mocks/mock_calculator.go --package=mocks -source=$(pwd)/calculator/calculator.go
+```
+
 ----
 ### Links:
 - https://github.com/golang/mock
